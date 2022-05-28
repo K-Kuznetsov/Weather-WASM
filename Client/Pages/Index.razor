@@ -20,8 +20,11 @@ else
             <tr>
                 <th>Date</th>
                 <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
+                <th>Wind (km/h)</th>
+                <th>Chance of rain (%)</th>
+                <th>Chance of snow (%)</th>
                 <th>Summary</th>
+                <th>Icon</th>
             </tr>
         </thead>
         <tbody>
@@ -30,8 +33,11 @@ else
                 <tr>
                     <td>@forecast.Date.ToShortDateString()</td>
                     <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
+                    <td>@forecast.MaxWind</td>
+                    <td>@forecast.Rainchance</td>
+                    <td>@forecast.SnowChance</td>
                     <td>@forecast.Summary</td>
+                    <td>@forecast.ICON</td>
                 </tr>
             }
         </tbody>
